@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VUE Course</title>
+</head>
+<body>
+
+    <div id="app">
+        <p>{{ msg }}</p>
+        <p>{{ ehVerdade ? 'Verdade' : 'Falso' }}</p>
+        <p>{{ frutas [0] + ' e ' + frutas[1] }}</p>
+        <p>Aluno: {{ aluno.nome }}</p>
+        <p>{{ 1 + num1 }}</p>
+        <p>{{ fun1 }}</p>
+        <p>{{ fun1() }}</p>
+        <p>{{ fun2 }}</p>
+        <p>{{ fun2() }}</p>
+        <p>{{ fun3(1) }}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/vue-file.js"></script>
+</body>
+</html>

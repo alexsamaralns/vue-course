@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VUE Course</title>
+</head>
+<body>
+
+    <div id="app">
+        <img v-bind:src="srcImg" v-bind:title="titleImg"><hr>
+        <a :href="url" target="_blank">Vue</a>
+        <p v-text="'Texto qualquer!!!'"></p>
+        <div v-text="textPar"></div>
+        <div v-html="quebraLinha"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/vue-file-diretivas.js"></script>
+</body>
+</html>
