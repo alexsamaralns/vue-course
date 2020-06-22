@@ -9,11 +9,26 @@
 <body>
 
     <div id="app">
-        <img v-bind:src="srcImg" v-bind:title="titleImg"><hr>
-        <a :href="url" target="_blank">Vue</a>
+        <div>
+            <input type="text" v-model="textoDigitado" />
+                {{textoDigitado}}
+            <br>
+            <input type="text" v-model="imgEscolha"/>
+            <br>
+            <div v-if="imgEscolha==1">
+                <img v-bind:src="srcImg1" v-bind:title="titleImg" width="500px"><hr>
+            </div>
+            <div v-else-if="imgEscolha==2">
+                <img v-bind:src="srcImg2" v-bind:title="titleImg" width="500px"><hr>
+            </div>
+            <div v-else="imgEscolha==3">
+                <img v-bind:src="srcImg3" v-bind:title="titleImg" width="500px"><hr>
+            </div>
+        </div>        
+        <!--<a :href="url" target="_blank">Vue</a>
         <p v-text="'Texto qualquer!!!'"></p>
         <div v-text="textPar"></div>
-        <div v-html="quebraLinha"></div>
+        <div v-html="quebraLinha"></div>-->
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
